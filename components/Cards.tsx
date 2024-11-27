@@ -8,22 +8,29 @@ interface recipeProps {
 }
 
 interface CardsProps {
-  recipes: recipeProps[]; // Accepts an array of recipes as the `recipes` property
+  recipes: recipeProps[];
 }
 
 const Cards = ({ recipes }: CardsProps) => {
   return (
-    <div className="flex flex-wrap mt-3">
-      {recipes.map((recipe) =>
-        <Card
-          key={recipe.id}
-          src={`https:${recipe.Image}`}
-          title={recipe.Title}
-          rating={1.3}
-          totalRating={800}
-        />
-      )}
-    </div>
+    <>
+      <div className="flex flex-wrap mt-3">
+        {recipes.map((recipe) =>
+          <Card
+            key={recipe.id}
+            src={`https:${recipe.Image}`}
+            title={recipe.Title}
+            rating={1.3}
+            totalRating={800}
+          />
+        )}
+      </div>
+      <div className="flex justify-center">
+        <button>Show More</button>
+      </div>
+    </>
+
+
   );
 };
 

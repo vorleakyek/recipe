@@ -19,3 +19,31 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.share-button {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(135deg, #ff6f3c, #ff9f1c);
+  border: 5px solid #d1d1d1;
+  border-radius: 50%;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2), inset 0px -2px 5px rgba(255, 255, 255, 0.3); /* Outer shadow + subtle inner glow */
+  color: white;
+  font-family: 'Georgia', serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.share-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3), inset 0px -3px 7px rgba(255, 255, 255, 0.4);
+}
+
+.share-button:active {
+  transform: scale(0.95);
+  box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.3), inset 0px -1px 4px rgba(255, 255, 255, 0.3);
+}
