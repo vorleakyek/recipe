@@ -1,4 +1,5 @@
 import Cards from "@/components/Cards";
+import Link from "next/link";
 
 export default function Home() {
 
@@ -22,7 +23,11 @@ export default function Home() {
         <p className="text-center">Got a dish you love? Share the favor!</p>
         <div className="flex gap-5 mt-3 align-center">
           <div>
-            <button className="share-button">Share!</button>
+            <Link href="/shareRecipe">
+              <button className="share-button">
+                Share!
+              </button>
+            </Link>
           </div>
           <div>
             <p>Click Share to upload you recipe and inspire others to create magic in the kitchen.</p>
