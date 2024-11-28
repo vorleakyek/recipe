@@ -1,6 +1,6 @@
 
 import Image from "next/image";
-import Link from "next/Link";
+import Link from "next/link";
 import { Heart } from "lucide-react";
 import StarRating from "./StarRating";
 import type { recipeProps } from "./Cards";

@@ -1,10 +1,10 @@
 import Card from "./Card"
 export interface recipeProps {
   id: number;
-  Title: string;
-  Ingredients: {[key: string]: string | undefined;};
-  Instructions: string;
-  Image: string;
+  title: string;
+  ingredients: {[key: string]: string | undefined;};
+  instructions: string;
+  image: string;
 }
 
 interface CardsProps {
