@@ -1,5 +1,5 @@
 import Card from "./Card"
-interface recipeProps {
+export interface recipeProps {
   id: number;
   Title: string;
   Ingredients: {[key: string]: string | undefined;};
@@ -18,8 +18,7 @@ const Cards = ({ recipes }: CardsProps) => {
         {recipes.map((recipe) =>
           <Card
             key={recipe.id}
-            src={`https:${recipe.Image}`}
-            title={recipe.Title}
+            recipe={recipe}
             rating={1.3}
             totalRating={800}
           />
